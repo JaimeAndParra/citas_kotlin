@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class HealthCheckController {
 
+    // TEST
     @GetMapping(HEALTH_CHECK)
     fun healthCheck():ResponseEntity<HealthCheckResponse> = ResponseEntity(HealthCheckResponse(), HttpStatus.OK)
 
