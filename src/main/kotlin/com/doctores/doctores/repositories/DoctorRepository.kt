@@ -14,4 +14,6 @@ interface DoctorRepository : JpaRepository<Doctor, Long> {
     @Transactional(propagation = Propagation.NOT_SUPPORTED)
     @Query("select * from doctores where id_doctor = :id", nativeQuery = true)
     fun getByDoctorId(id: Long): Doctor?
+
+
 }
